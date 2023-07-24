@@ -1,0 +1,212 @@
+:root {
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-1: hsl(0, 0%, 20%);
+  --clr-gray-2: hsl(0, 0%, 31%);
+
+
+
+  /* Font */
+  --ff-main: 'Space Mono', monospace;
+  --ff-header: 'Inconsolata', monospace;
+
+  --fw-main: 700;
+  --fw-base: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+
+body {
+  background-color: var(--clr-white);
+  font-family: var(--ff-main);
+}
+
+h2 {
+  color: var(--clr-gray-1);
+  font-family: var(--ff-header);
+  font-weight: var(--ff-main);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.08rem;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  margin-left: 0.985rem;
+  margin-right: 1.5rem;
+
+  width: 88.8%;
+}
+
+.container_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 88.8%;
+  height: 100%;
+  max-width: 600px;
+}
+
+.container_content {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+  color: var(--clr-gray-1);
+  font-size: 2.785rem;
+  line-height: normal;
+  padding-top: 2.785rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  color: var(--clr-gray-2);
+  font-family: var(--ff-main);
+  font-size: 1.125rem;
+  padding-bottom: 3.875rem;
+  
+}
+
+button {
+  border: none;
+  background-color: var(--clr-gray-1);
+  padding: 1rem;
+}
+
+.cta {
+  color: var(--clr-white);
+  font-family: var(--ff-main);
+  font-size: 0.875rem;
+  font-weight: var(--fw-main);
+  text-decoration: none;
+
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--clr-gray-2);
+}
+
+.attribution {
+  color: var(--clr-gray-2);
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+@media (min-width: 1220px) {
+
+  .container {
+    margin: 4rem;
+   
+  }
+
+    .container_section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    header {
+      padding-bottom: 3rem
+    }
+
+    h1 {
+      padding-top: 0;
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+    .container_content {
+      margin-right: 1rem;
+      margin-left: 7rem;
+    }
+
+    p {
+      margin-right: 13rem;
+    }
+
+    .attribution {
+      font-size: 1rem;
+    }
+}
